@@ -8,15 +8,17 @@ body {
 }
 
 .header {
+    flex: 1;
     background-color: #1F2937;
     display: flex;
     flex-direction: column;
     margin: 0;
-    padding: 16px 160px 100px 160px;
+    padding: 16px 160px 120px 160px;
     
 }
 
 .header-top {
+    flex: none;
     display: flex;
     justify-content: space-between;
     gap: 16px;
@@ -44,6 +46,7 @@ ul.header-links a {
 }
 
 .header-content {
+    flex: 1 1 300px;
     margin-top: 60px;
     display: flex;
     justify-content: space-between;
@@ -54,7 +57,7 @@ ul.header-links a {
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 12px;
 }
@@ -86,12 +89,62 @@ ul.header-links a {
 }
 
 .header-content-right {
-    flex: 2;
+    flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #E5E7EB;
     font-size: 18px;
     background-color: #808080;
-    max-width: 800px;
 }
+
+.content-section {
+    flex: 1;
+    gap: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 240px 60px 240px;
+}
+
+.content-header {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 44px;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+}
+
+.frame {
+    border: 4px solid #3882F6;
+    border-radius: 20px;
+    width: 160px;
+    height: 160px;
+}
+
+.subtext {
+    color: #E5E7EB;
+    font-size: 18px;
+    width: 160px;
+}
+
+
+
+
+
+
+
